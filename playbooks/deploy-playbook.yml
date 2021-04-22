@@ -1,0 +1,8 @@
+- name: Copy HTML files
+  copy:
+    src: index.html
+    dest: /var/www/html/
+    owner: www-data
+    group: www-data
+  notify:
+    - restart_nginx
