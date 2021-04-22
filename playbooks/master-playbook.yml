@@ -7,4 +7,3 @@
     - include: deploy-playbook.yml
   handlers:
     - include: nginx-handler.yml
-    

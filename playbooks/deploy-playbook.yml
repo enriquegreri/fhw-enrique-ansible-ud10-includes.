@@ -1,8 +1,8 @@
 - name: Copy HTML files
   copy:
-    src: index.html
-    dest: /var/www/html/
+    src: /home/vagrant/ud10-includes/files/index-{{env}}.html
+    dest: /var/www/html/index.html
     owner: www-data
     group: www-data
   notify:
-    - restart_nginx
+    - nginx_restart
